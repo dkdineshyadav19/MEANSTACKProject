@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="col-12 bg-warning text-center p-3">
+        <h1>Wishlist</h1>
+    </div>
+      <div class="row mt-2">
+        <div
+        class="col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3 product-card"
+        *ngFor="let cart of savedwish"
+      >
+        <div class="badge"></div>
+        <div class="product-tumb">
+          <img src="{{ cart.image }}" alt="" />
+        </div>
+        <div class="product-details">
+          <!-- <span class="product-catagory">{{ cart.category }}</span> -->
+          <h4>
+            <a href="">{{ cart.title }}</a>
+          </h4>
+          <div class="product-bottom-details">
+            <div class="product-price">
+              <small>${{ cart.price + 100 }}</small
+                >
+              ${{ cart.price }}
+            </div>
+            <div class="product-links">
+               <button  type="button" class="btn btn-light ms-1"><i class="fa fa-shopping-cart">❌</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+            
+            
+            
+        </div>  
+        
+  </div>
+  

@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+      <div
+        class="col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3 product-card"
+        *ngFor="let child of children"
+      >
+        <div class="badge"></div>
+        <div class="product-tumb">
+          <img src="{{ child.image }}" alt="" />
+        </div>
+        <div class="product-details">
+          <span class="product-catagory">{{ child.category }}</span>
+          <h4>
+            <a href="">{{ child.title }}</a>
+          </h4>
+          <p>{{ child.description }}</p>
+          <div class="product-bottom-details">
+            <div class="product-price">
+              <small>${{ child.price + 100 }}</small
+              >${{ child.price }}
+            </div>
+            <div class="product-links">
+              <button (click)="wishid(child.id)" type="button" class="btn btn-light"><i class="fa fa-heart">❤️</i></button>
+             <button (click)="getid(child.id)" type="button" class="btn btn-light ms-1"><i class="fa fa-shopping-cart">🛒</i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

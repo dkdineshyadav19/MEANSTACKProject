@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="row">
+    <div
+      class="col-sm-12 col-md-4 col-lg-3 col-xl-3 col-xxl-3 product-card"
+      *ngFor="let woman of women"
+    >
+      <div class="badge"></div>
+      <div class="product-tumb">
+        <img src="{{ woman.image }}" alt="" />
+      </div>
+      <div class="product-details">
+        <span class="product-catagory">{{ woman.category }}</span>
+        <h4>
+          <a href="">{{ woman.title }}</a>
+        </h4>
+        <p>{{ woman.description }}</p>
+        <div class="product-bottom-details">
+          <div class="product-price">
+            <small>${{ woman.price + 100 }}</small
+            >${{ woman.price }}
+          </div>
+          <div class="product-links">
+            <button (click)="wishid(woman.id)" type="button" class="btn btn-light"><i class="fa fa-heart">❤️</i></button>
+             <button (click)="getid(woman.id)" type="button" class="btn btn-light ms-1"><i class="fa fa-shopping-cart">🛒</i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

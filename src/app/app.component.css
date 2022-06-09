@@ -1,0 +1,21 @@
+.demo
+{
+    height: 100vh;
+    background-color: black;
+    color:white;
+}
+.shopname
+{
+    font-family: 'Concert One', cursive;
+    font-weight:bolder;
+}
+.nav{
+    font-family: Verdana, sans-serif;
+}
+a:active
+{
+    color: black;
+}
+a{
+    color: black;
+}
